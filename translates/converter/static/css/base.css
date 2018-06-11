@@ -1,0 +1,194 @@
+body{
+	background:#fff;
+	margin:0;
+	padding:0;
+}
+.container{
+	background:#f9f9f9;
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+.header{
+	height:31px;
+	line-height:31px;
+	padding:14px 0;
+	background:#fff;
+	
+}
+.divide-wrap{
+	position:relative;
+	height:1px;
+	z-index:1;
+}
+.container .inner{
+	width:100%;
+	margin:0 143px;
+}
+.main .inner{
+	padding:30px 0 10px;
+	
+}
+
+.translate-wrap{
+	position:relative;
+	z-index:1;
+	zoom:1;
+	margin-bottom:60px;
+}
+.trans-operation{
+	float:left;
+	width:75%;
+	min-width:670px;
+	margin-bottom:10px;
+}
+.trans-operation a{
+	float:left;
+}
+.language-btn,.language-btn-disable{
+	display:inline-block;
+	height:30px;
+	line-height:30px;
+	color:#333;
+}
+.select-from-language,.select-to-language{
+	background:#fff;
+	border:1px solid #dcdcdc;
+	border-radius:5px;
+	width:176px;
+	text-align:center;
+	
+}
+.from-to-exchange{
+	padding:0 21px;
+	height:30px;
+	line-height:30px;
+	background-color:#f9f9f9;
+	z-index:6;
+}
+.language-btn-disable{
+	cursor:not-allowed;
+}
+a{
+	text-decoration:none;
+	color:#666;
+	
+}
+a:-webkit-any-link{
+	cursor:pointer;
+}
+
+.select-inner{
+	line-height:30px;
+	width:100%;
+	position:relative;
+	z-index:4px;
+	left:0;
+}
+.language-btn span{
+	display:inline-block;
+	zoom:1;
+}
+.language-btn-disable .exchange-mask{
+	background-image:url(https://fanyi.bdstatic.com/static/translation/img/translate/translang/change-disable1x_9fefcff.png);
+	background-repeat:no-repeat;
+	background-position:-2px 50%;
+}
+.from-to-exchange .exchange-mask{
+	display:inline-block;
+	width:21px;
+	height:21px;
+	overflow:hidden;
+	vertical-align:middle;
+	margin-top:-4px;
+}
+.language-btn-disable span{
+	line-height:27px;
+	zoom:1;
+}
+
+.trans-operation .trans-btn-zh{
+	width:106px;
+	height:32px;
+	padding:0;
+	border:0;
+	background-color:#fff;
+}
+.trans-operation .trans-btn{
+	display:inline-block;
+	font-size:14px;
+	font-weight:500;
+	color:#fff;
+	margin-left:14px;
+	webkit-border-radius:5px;
+	moz-border-radius:5px;
+	border-radius:5px;
+	text-align:center;
+	height:30px;
+	line-height:30px;
+	letter-spacing:10px;
+	padding-left:33px;
+	padding-right:23px;
+	vertical-align:top;
+	padding-left:10px;
+}
+.icon-transbtn{
+	background-repeat:no-repeat;
+	background-image:url(https://fanyi.bdstatic.com/static/translation/sprite/images/normal/index-sfa8e40da74_844b54f.png);
+	background-position:0 -1072px;
+	height:32px;
+	width:106px;
+}
+.translateio{
+	width:80%;
+}
+.trans-left{
+	float:left;
+	width:49.999999%;
+	position:relative;
+}
+.trans-input-wrap{
+	background-color:#fff;
+	position:relative;
+	border:1px solid #dedede;
+}
+.input-wrap{
+	min-height:84px;
+	padding:0;
+	background-color:#fff;
+	position:relative;
+	
+}
+.input-text{
+  
+   padding-top:0;
+   padding-left: 0;
+   margin: 0;
+   width: 100%;
+   height:100px;
+   background: #fff;
+   position: relative;
+   border: 0;
+}
+.trans-right{
+	float:right;
+	width:49.999999%;
+	position:relative;
+}
+.output-blank{
+	border:1px solid #eee;
+	border-left:0;
+	background-color:#f0f0f0;
+}
+.output-wrap{
+ min-height:132px;
+ position:relative'
+ z-index:9;
+}
+.translateio .preview-placeholder{
+	display:block;
+	height:0;
+	width:50%;
+	overflow:visible;
+	position:relative;
+}

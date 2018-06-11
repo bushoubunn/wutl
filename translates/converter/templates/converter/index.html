@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}関西語の翻訳{% endblock %}
+
+{% block content %}
+                    <form action="." method="POST">
+                        <div class="trans-operation-wrapper clearfix">
+                            <div class="trans-operation clearfix">
+                                <a href="#" class="language-btn select-from-language">
+                                    <span class="select-inner">関西語</span>
+                                </a>
+                                <a href="#" class="language-btn-disable from-to-exchange">
+                                    <span class="exchange-mask"></span>
+                                </a>
+                                <a href="#" class="language-btn select-to-language">
+                                   <span class="select-inner">普通語</span> 
+                                </a>
+                                <a href="#" class="trans-btn trans-btn-zh icon-transbtn" id="translate-button">
+                                <input type="submit" class="trans-btn trans-btn-zh icon-transbtn" value="">
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <div class="translateio">
+                                <div class="translate-main clearfix">
+                                    <div class="trans-left">
+                                        <div class="trans-input-wrap">
+                                            <div class="input-wrap" style="height: auto;">
+                                                {% csrf_token %}
+                                                {{ form.as_p }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="trans-right">
+                                        <div class="output-wrap output-blank" style="height: 137px;">
+                                            <ul>
+                                            {% for item in translated %}
+                                             <li>{{ item.yakubun }}</li>
+                                            {% endfor %}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="preview-placeholder"></div>
+                        </div>
+                        </form>
+{% endblock %}
