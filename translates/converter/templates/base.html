@@ -8,6 +8,7 @@
             <meta name="renderer" content="webkit">
             <meta name="force-rendering" content="webkit">
             <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" >
+            <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
     </head>
     <body>
     <div class="container">
@@ -20,7 +21,7 @@
         {% if messages %}
         <ul class="messages">
             {% for message in messages %}
-            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message | safe }}</li>
             {% endfor %}
         </ul>
         {% endif %}

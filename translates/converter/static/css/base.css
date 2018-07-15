@@ -13,7 +13,7 @@ body{
 	height:31px;
 	line-height:31px;
 	padding:14px 0;
-	background:#fff;
+	background:#08863C;
 	
 }
 .divide-wrap{
@@ -187,7 +187,7 @@ a:-webkit-any-link{
 }
 .translateio .preview-placeholder{
 	display:block;
-	height:0;
+	height:30;
 	width:50%;
 	overflow:visible;
 	position:relative;

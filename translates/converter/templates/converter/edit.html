@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}関西語の編集{% endblock %}
+
+{% block content %}
+    
+     <form action="." method="POST" class="form-inline" role="form">
+
+         {% csrf_token %}
+         <div class="form-group">
+         {% for kword in k_form %}
+         <label class="col-sm-2 control-label">{{ kword.label }}</label>
+         <div class="form-control">{{ kword }}</div>
+         {% endfor%}
+        {% for fword in f_form %}
+        <label class="col-sm-2 control-label">{{ fword.label }}</label>
+        <div class="form-control">{{ fword }}</div>
+         {% endfor %}
+         </div>
+         <div style="margin-top: 20px;">
+         <a href="{% url 'converter:index' %}"><input type="button" value="ホームに戻る" style="color: #17CF64  "></a>
+         <input type="submit" value="確定" style="margin-left: 10px; color: #17CF64  ">
+         </div>
+    </form>
+    
+{% endblock %}

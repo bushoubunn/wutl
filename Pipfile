@@ -5,6 +5,11 @@ name = "pypi"
 
 [packages]
 django = "*"
+nltk = "*"
+numpy = "*"
+"mecab-python3" = "*"
+jieba = "*"
+nagisa = "*"
 
 [dev-packages]
 

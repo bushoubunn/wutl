@@ -20,5 +20,5 @@ from converter import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('converter.urls')),
+    path('',include('converter.urls',namespace='converter')),
 ]

@@ -7,5 +7,5 @@ class KansaikotobaAdmin(admin.ModelAdmin):
 
 admin.site.register(Kansaikotoba,KansaikotobaAdmin)
 class FutugoAdmin(admin.ModelAdmin):
-    list_display=('yakubun','ori_kotoba')
+    list_display=('yakubun','ori_kotoba','example')
 admin.site.register(Futugo,FutugoAdmin)
